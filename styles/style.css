@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+}
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1340px;
+  height: 109px;
+  flex-shrink: 0;
+  margin: 92px 49px 92px 20px;
+}
+.links-list-item {
+  display: flex;
+  flex-direction: row;
+  list-style: circle;
+  list-style-type: circle;
+}
+.header__menu {
+  text-transform: lowercase;
+}
+.header__link {
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 32px;
+}
+.header__link_active  {
+  text-decoration: none;
+  list-style-type: none;
+}
+.header__link_active .header__link {
+  text-decoration: none;
+  list-style-type: none;
+}
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: circle;
+  list-style-position: outside;
+}
+.header__logo {
+  width: 148px;
+  height: 105px;
+  margin-right: 135px;;
+}
+.address {
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.3px; /* 135% */
+}
+.cover {
+  position: relative;
+  margin: 0 auto;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  z-index: 1;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.6;
+  z-index: -1;
+}
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 165px;
+  padding-left: 50px;
+  gap: 7px;
+}
+.aligned-text {
+  color: #fff;
+  text-transform: uppercase;
+  max-width: 1340px;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+}
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+.aligned-text_center {
+  text-align: center;
+}
+.aligned-text_right {
+  text-align: right;
+}
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  padding: 125px 50px 50px 422px;
+}
+.cover__description-text {
+  color: #fff;
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 1.27;
+  word-spacing: 17px;
+}
+.bet-button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  padding: 12px 32px;
+  margin-right: 90px;
+  font-size: 22px;
+  line-height: 1.18;
+}
+.lots {
+  padding:180px 50px 0 50px;
+  margin-bottom: 181px ;
+}
+.lots__heading {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 40px;
+  padding-bottom: 27px;
+}
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap:25px;
+  list-style: none;
+}
+.lots__card-list_item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 430px;
+  flex-grow: 1;
+}
+.card-link {
+  text-decoration: none;
+}
+.card {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 450px;
+  padding: 50px 40px 50px 40px;
+}
+.card_type_film {
+  background-image: url(/images/card-lot-01.jpg);
+  z-index: -2;
+}
+.card_type_book {
+  background-image: url(/images/card-lot-02.jpg);
+  z-index: -2;
+}
+.card_type_picture {
+  background-image: url(/images/card-lot-03.jpg);
+  z-index: -2;
+}
+.card__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%; 
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color:#FFFFFF;
+  z-index: 1;
+}
+.card__text {
+  font-weight: 400;
+  font-size: 20px;
+  color:#FFFFFF;
+  z-index: 1;
+}
+.lots__look-more-link {
+  display:block;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.about {
+  width: 600px;
+  display: grid;
+  grid-template-columns: 11% 29% 4fr;
+  width: 1340px;
+  height: 487px;
+  flex-shrink: 0;
+  margin-left: 50;
+  margin-right: 50;
+}
+.about__logo {
+  background-color: #000;
+  background-size: ;
+  border-radius: 100%;
+  width: 240px;
+  height: 240px;
+  flex-shrink: 0;
+  margin: 180px 120px 248px px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+  flex-shrink: 0;
+  margin: 63px 46px 63px 46px;
+}
+.about__title {
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  margin-top: 100px;
+}
+.about__text_first {
+  width: 885px;
+  height: 96px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  margin-bottom: 25px;
+}
+.about__text_second {
+  width: 885px;
+  height: 119px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin: 180px 50px 90px 50px;
+  max-width: 1340px;
+  height: 97px;
+  flex-shrink: 0;
+}
+.links-list-item {
+  display: flex;
+  flex-direction: row;
+}
+.footer_link {
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer__link_active .footer_link  {
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+.footer__social-list {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  align-self: center;
+ }
+.footer__social-link {
+  min-height: 48px;
+  max-width: 240px;
+  display: flex;
+  margin-left: auto;
+}
+.footer__social-icon { 
+  height: 48px;
+  flex-shrink: 0;
+  margin-right: 50px;
+  margin-left: 0;
+}
