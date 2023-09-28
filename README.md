@@ -1,1 +1,1 @@
-https://github.com/MaxxyG/ono_tebe_nado.git
+https://github.com/MaxxyG/ono-tebe-nado.git
